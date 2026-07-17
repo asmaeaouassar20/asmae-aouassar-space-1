@@ -9,3 +9,9 @@ Il offre :
 daisyUI est une bibliothèque de composants basée sur Tailwind CSS.  
 Elle fournit des composants prêts à l'emploi (boutons, cartes, menus, formulaires, modales, etc.).  
 Disponible à <a href="https://daisyui.com/docs/install/">daisyUI</a>
+
+
+#### Lucide React
+- C'est une bibliothèque d'icônes SVG pour React.
+- Elle permet d'ajouter facilement des icônes à ton interface (menu, recherche, utilisateur, paramètres, etc.) sous forme de composants React.  
+Disponible sur <a href="https://lucide.dev/guide/react/getting-started"> lucide.dev</a>
