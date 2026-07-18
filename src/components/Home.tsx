@@ -3,7 +3,7 @@ import imgPerso from '../assets/asmae.jpeg';
 
 const Home = () => {
     return (
-        <div className="flex flex-col-reverse md:flex-row justify-center itels-center md:my-32 my-10">
+        <div className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10">
             <div className="flex flex-col">
                 <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left mt-5 md:mt-0">
                     Bonjour, <br/>
