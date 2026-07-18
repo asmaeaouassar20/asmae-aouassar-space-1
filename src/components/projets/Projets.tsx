@@ -1,6 +1,6 @@
 
 import defaultImg from '../../assets/default.png';
-import type { ProjetInterface } from '../../utilities/Projet';
+import type { ProjetInterface } from '../../utilities/ProjetInterface';
 import Title from '../Title';
 import ProjetCard from './ProjetCard';
 
@@ -36,7 +36,7 @@ const projects : ProjetInterface[] = [
 
 const Projets = () => {
     return (
-        <div className='my-20'>
+        <div className='my-20' id="projets">
             <Title title='Projets' />
             <div>
               {

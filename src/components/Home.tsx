@@ -3,7 +3,7 @@ import imgPerso from '../assets/asmae.jpeg';
 
 const Home = () => {
     return (
-        <div className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10">
+        <div className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10" id="accueil">
             <div className="flex flex-col">
                 <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left mt-5 md:mt-0">
                     Bonjour, <br/>
@@ -15,7 +15,7 @@ const Home = () => {
                     Je suis un développeur fullstack.<br/>
                     Contactez-moi si vous avez besoin de moi
                 </p>
-                <a href="" className="btn btn-accent h-10 w-full  md:w-40">
+                <a href="https://www.linkedin.com/in/asmae-aouassar-2738b624b/" className="btn btn-accent h-10 w-full  md:w-40">
                     <Send />    
                     Contactez-moi                
                 </a>

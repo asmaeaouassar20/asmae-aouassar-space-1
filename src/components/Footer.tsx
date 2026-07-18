@@ -12,9 +12,9 @@ const Footer = () => {
             </div>
 
             <div className="flex text-4xl flex items-center justify-center  gap-6 mt-6">
-                <a href="#"><FaGithub /></a>
-                <a href="#"><FaYoutube /></a>
-                <a href="#"><FaLinkedin /></a>                                
+                <a href="https://github.com/asmaeaouassar20"><FaGithub /></a>
+                <a href="https://www.youtube.com/@algostyle5707"><FaYoutube /></a>
+                <a href="https://www.linkedin.com/in/asmae-aouassar-2738b624b/"><FaLinkedin /></a>                                
             </div>
         </div>
     )

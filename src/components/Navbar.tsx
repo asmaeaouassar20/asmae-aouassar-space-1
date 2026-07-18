@@ -9,23 +9,26 @@ const Navbar = () => {
         position: 'fixed',
         top: '10px',
         right: '10px',
-        zIndex : '999'
+        zIndex: '999'
     }
     return (
         <div className="flex justify-center md:justify-between p-4 items-center">
             <Logo />
             <ul className="hidden md:flex space-x-4">
                 <li>
-                    <a href="Accueil" className="btn btn-sm btn-ghost">Accueil</a>
+                    <a href="#accueil" className="btn btn-sm btn-ghost">Accueil</a>
                 </li>
                 <li>
-                    <a href="Accueil" className="btn btn-sm btn-ghost">A propos</a>
+                    <a href="#about" className="btn btn-sm btn-ghost">A propos</a>
                 </li>
                 <li>
-                    <a href="Accueil" className="btn btn-sm btn-ghost">Mes expériences</a>
+                    <a href="#algostyle" className="btn btn-sm btn-ghost">Ma chaîne YouTube</a>
                 </li>
                 <li>
-                    <a href="Accueil" className="btn btn-sm btn-ghost">Mes projets</a>
+                    <a href="#experiences" className="btn btn-sm btn-ghost">Mes expériences</a>
+                </li>
+                <li>
+                    <a href="#projets" className="btn btn-sm btn-ghost">Mes projets</a>
                 </li>
             </ul>
 
@@ -35,21 +38,24 @@ const Navbar = () => {
 
             {
                 isOpen && <div className="fixed top-0 right-0 menu-burger bg-base-300">
-                <ul className="flex flex-col  space-y-4  p-5 h-screen" >
-                    <li>
-                        <a href="Accueil" className="btn btn-sm btn-ghost">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="Accueil" className="btn btn-sm btn-ghost">A propos</a>
-                    </li>
-                    <li>
-                        <a href="Accueil" className="btn btn-sm btn-ghost">Mes expériences</a>
-                    </li>
-                    <li>
-                        <a href="Accueil" className="btn btn-sm btn-ghost">Mes projets</a>
-                    </li>
-                </ul>
-            </div>
+                    <ul className="flex flex-col  space-y-4  p-5 h-screen" >
+                        <li onClick={()=>setIsOpen(false)}>
+                            <a href="#accueil" className="btn btn-sm btn-ghost">Accueil</a>
+                        </li>
+                        <li onClick={()=>setIsOpen(false)}>
+                            <a href="#about" className="btn btn-sm btn-ghost">A propos</a>
+                        </li>
+                        <li onClick={()=>setIsOpen(false)}>
+                            <a href="#algostyle" className="btn btn-sm btn-ghost">Ma chaîne YouTube</a>
+                        </li>
+                        <li onClick={()=>setIsOpen(false)}>
+                            <a href="#experiences" className="btn btn-sm btn-ghost">Mes expériences</a>
+                        </li>
+                        <li onClick={()=>setIsOpen(false)}>
+                            <a href="#projets" className="btn btn-sm btn-ghost">Mes projets</a>
+                        </li>
+                    </ul>
+                </div>
             }
 
         </div>
