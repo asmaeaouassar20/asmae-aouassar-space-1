@@ -9,7 +9,7 @@ const Navbar = () => {
         position: 'fixed',
         top: '10px',
         right: '10px',
-        zIndex: '999'
+        zIndex: '9999'
     }
     const size=35;
     return (
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            <button style={styles} className="hover:cursor-pointer md:hidden" onClick={() => setIsOpen(!isOpen)} >
+            <button style={styles} className="hover:cursor-pointer" onClick={() => setIsOpen(!isOpen)} >
                 {isOpen ? <X size={size} /> : <Menu size={size} />}
             </button>
 
