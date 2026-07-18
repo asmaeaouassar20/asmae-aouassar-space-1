@@ -1,5 +1,7 @@
 
 import defaultImg from '../../assets/default.png';
+import toolTalk from '../../assets/projets/toolTalk.png';
+import stageTrack from '../../assets/projets/stageTrack.png';
 import type { ProjetInterface } from '../../utilities/ProjetInterface';
 import Title from '../Title';
 import ProjetCard from './ProjetCard';
@@ -7,21 +9,21 @@ import ProjetCard from './ProjetCard';
 const projects : ProjetInterface[] = [
   {
     id: 1,
-    title: "Application de Gestion des Tâches",
+    title: "stageTrack : Application Web pour la gestion des rapports de stage",
     description:
-      "Application web permettant de créer, modifier et supprimer des tâches avec authentification.",
-    image: defaultImg,
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+      "Application web pour simplifier et centraliser la gestion des rapports de stage des étudiants de l'ENSA de Fès. Son objectif est de faciliter le dépôt, la validation, le suivi et l'archivage des rapports de stage, tout en améliorant la communication entre les étudiants, les enseignants et l'administration.",
+    image: stageTrack,
+    technologies: ["Spring Boot", "Angular", "Spring Security", "Bootstrap" , "MySQL"],
     github: "https://github.com/votre-compte/task-manager",
   },
   {
     id: 2,
-    title: "Site E-commerce",
+    title: "toolTalk",
     description:
-      "Plateforme de vente en ligne avec panier, paiement et tableau de bord administrateur.",
-    image: defaultImg,
-    technologies: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-    github: "https://github.com/votre-compte/ecommerce",
+      "Plateforme communautaire de retours d'expérience sur les outils IA. Postez vos tests, avis, propositions, conseils, découvertes, cas d'usage ...",
+    image: toolTalk,
+    technologies: ["php", "Laravel", "Tailwind CSS"],
+    github: "https://github.com/asmaeaouassar20/ToolTalk",
   },
   {
     id: 3,
