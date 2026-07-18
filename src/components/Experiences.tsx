@@ -71,7 +71,7 @@ const Experiences = () => {
     return (
         <div id="experiences">
             <Title title="Experiences" />
-            <div className="flex flex-col-reverse md:flex-row justify-center items-center">
+            <div className="flex flex-col-reverse md:flex-row justify-center items-center mt-12">
                 <div className="flex flex-wrap gap-4 justify-center items-center md:w-1/3 mt-4 md:mt-0">
                     {
                         skills.map((skill) => (

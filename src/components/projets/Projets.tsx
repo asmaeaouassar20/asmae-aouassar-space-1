@@ -36,9 +36,9 @@ const projects : ProjetInterface[] = [
 
 const Projets = () => {
     return (
-        <div className='my-20' id="projets">
+        <div className='mt-32 mb-12' id="projets" >
             <Title title='Projets' />
-            <div>
+            <div className="md:grid md:grid-cols-3 gap-6 items-stretch mt-8">
               {
                 projects.map( (project , index)=> 
                     <ProjetCard key={index} projet={project} />

@@ -12,13 +12,13 @@ function App() {
 
   return (
     <div>
-      <div className='p-5 md:px-[15%]'>
+      <div className='p-4 md:px-[15%]'>
         <Navbar />
         <Home />
       </div>
       <About />
       <MyYoutube />
-      <div className='p-5 md:px-[15%]'>
+      <div className='p-4 md:px-[15%]'>
         <Experiences />
         <Projets />
       </div>

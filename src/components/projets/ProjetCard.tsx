@@ -7,28 +7,29 @@ interface ProjetCardProps {
 
 const ProjetCard = ({ projet }: ProjetCardProps) => {
     return (
-        <div className="w-full my-12 shadow-xl py-3 px-12">
+        <div className="relative my-12 py-3 px-12 shadow-xl  md:my-0 md:py-3 md:px-3 ">
             <div>
-                <img src={projet.image} alt={`image du projet intitulé ${projet.title}`} />
+                <img className="w-full h-full object-cover" src={projet.image} alt={`image du projet intitulé ${projet.title}`} />
             </div>
             <div>
                 <div>
                     <h2 className="font-bold my-3">{projet.title}</h2>
                     <p className="font-light">{projet.description}</p>
                 </div>
-                <div>
-                    <div className="flex gap-2 py-3">
+
+                
+                    <div className="flex gap-2 py-3 flex-wrap mb-[50px]">
                         {
-                            projet.technologies.map((techno,index) => <div key={index} className="badge badge-accent">{techno}</div>)
+                            projet.technologies.map((techno, index) => <div key={index} className="badge badge-accent text-[10px]">{techno}</div>)
                         }
                     </div>
                     
-                        <a href="#"  className="mt-8 mb-2 py-1.5 bg-base-300 hover:bg-base-200 rounded-lg hover:cursor-pointer flex gap-4 items-center justify-center">
-                            <span className="hover:underline">Lien GitHub</span>
-                            <FaGithub className="inline  text-xl " />
-                        </a>
-                    
-                </div>
+                    <a href="#" className="absolute bottom-0 left-3 right-3  mt-8 mb-2 py-1.5 bg-base-300 hover:bg-base-200 rounded-lg hover:cursor-pointer flex gap-4 items-center justify-center">
+                        <span className="hover:underline">Lien GitHub</span>
+                        <FaGithub className="inline  text-xl " />
+                    </a>
+
+               
             </div>
         </div>
     )

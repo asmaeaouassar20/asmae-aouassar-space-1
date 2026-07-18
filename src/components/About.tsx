@@ -28,13 +28,13 @@ const aboutSections = [
 
 const About = ()=>{
     return (
-        <div className="bg-base-200 p-10 mb-10 md:mb-32 " id="about">
+        <div className="bg-base-200 p-8 mb-10 md:mb-32 " id="about">
             <Title title="à propos" />
-            <div className="md:h-screen flex justify-center items-center">
-                <div className="hidden md:block"> <img 
+            <div className="md:h-screen flex justify-center items-center mt-8">
+                <div className="hidden md:block  h-[70%] "> <img 
                     src={imgPerso}
                     alt="Ma photo personnelle" 
-                    className="w-96 object-cover rounded-xl"
+                    className="w-96 object-cover rounded-xl h-[80%] mt-[55px] "
                     />
                 </div>
 

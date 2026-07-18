@@ -11,6 +11,7 @@ const Navbar = () => {
         right: '10px',
         zIndex: '999'
     }
+    const size=35;
     return (
         <div className="flex justify-center md:justify-between p-4 items-center">
             <Logo />
@@ -32,8 +33,8 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            <button style={styles} className="hover:cursor-pointer" onClick={() => setIsOpen(!isOpen)} >
-                {isOpen ? <X /> : <Menu />}
+            <button style={styles} className="hover:cursor-pointer md:hidden" onClick={() => setIsOpen(!isOpen)} >
+                {isOpen ? <X size={size} /> : <Menu size={size} />}
             </button>
 
             {
