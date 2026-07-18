@@ -3,3 +3,8 @@
 @plugin "daisyui" {
   themes:   light --default, dark --prefersdark, caramellatte;
 }
+
+
+.menu-burger li a{
+  font-size: 15px;
+}

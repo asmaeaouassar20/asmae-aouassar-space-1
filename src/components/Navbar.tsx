@@ -1,6 +1,16 @@
+import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import { useState } from "react";
+import type { CSSProperties } from "react";
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const styles: CSSProperties = {
+        position: 'fixed',
+        top: '10px',
+        right: '10px',
+        zIndex : '999'
+    }
     return (
         <div className="flex justify-center md:justify-between p-4 items-center">
             <Logo />
@@ -8,17 +18,39 @@ const Navbar = () => {
                 <li>
                     <a href="Accueil" className="btn btn-sm btn-ghost">Accueil</a>
                 </li>
-                  <li>
+                <li>
                     <a href="Accueil" className="btn btn-sm btn-ghost">A propos</a>
                 </li>
-                  <li>
+                <li>
                     <a href="Accueil" className="btn btn-sm btn-ghost">Mes expériences</a>
                 </li>
-                  <li>
+                <li>
                     <a href="Accueil" className="btn btn-sm btn-ghost">Mes projets</a>
                 </li>
             </ul>
 
+            <button style={styles} className="hover:cursor-pointer" onClick={() => setIsOpen(!isOpen)} >
+                {isOpen ? <X /> : <Menu />}
+            </button>
+
+            {
+                isOpen && <div className="fixed top-0 right-0 menu-burger bg-base-300">
+                <ul className="flex flex-col  space-y-4  p-5 h-screen" >
+                    <li>
+                        <a href="Accueil" className="btn btn-sm btn-ghost">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="Accueil" className="btn btn-sm btn-ghost">A propos</a>
+                    </li>
+                    <li>
+                        <a href="Accueil" className="btn btn-sm btn-ghost">Mes expériences</a>
+                    </li>
+                    <li>
+                        <a href="Accueil" className="btn btn-sm btn-ghost">Mes projets</a>
+                    </li>
+                </ul>
+            </div>
+            }
 
         </div>
     )
