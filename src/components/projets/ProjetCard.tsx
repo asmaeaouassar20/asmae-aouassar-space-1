@@ -19,7 +19,7 @@ const ProjetCard = ({ projet }: ProjetCardProps) => {
                 <div>
                     <div className="flex gap-2 py-3">
                         {
-                            projet.technologies.map(techno => <div className="badge badge-accent">{techno}</div>)
+                            projet.technologies.map((techno,index) => <div key={index} className="badge badge-accent">{techno}</div>)
                         }
                     </div>
                     

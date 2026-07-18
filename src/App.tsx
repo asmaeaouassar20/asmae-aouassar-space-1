@@ -5,6 +5,7 @@ import About from './components/About'
 import Experiences from './components/Experiences'
 import Projets from './components/projets/Projets'
 import Footer from './components/Footer'
+import MyYoutube from './components/MyYoutube'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Home />
       </div>
       <About />
+      <MyYoutube />
       <div className='p-5 md:px-[15%]'>
         <Experiences />
         <Projets />

@@ -40,8 +40,8 @@ const Projets = () => {
             <Title title='Projets' />
             <div>
               {
-                projects.map( (project)=> 
-                    <ProjetCard projet={project} />
+                projects.map( (project , index)=> 
+                    <ProjetCard key={index} projet={project} />
                 )
               }
             </div>
