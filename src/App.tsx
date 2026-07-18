@@ -6,6 +6,7 @@ import Experiences from './components/Experiences'
 import Projets from './components/projets/Projets'
 import Footer from './components/Footer'
 import MyYoutube from './components/MyYoutube'
+import BackToTopButton from './components/BackToTopButton'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Projets />
       </div>
       <Footer />
+      <BackToTopButton />
     </div>
   )
 }
