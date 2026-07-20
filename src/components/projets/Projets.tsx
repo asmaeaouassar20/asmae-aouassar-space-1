@@ -1,7 +1,7 @@
 
-import defaultImg from '../../assets/default.png';
 import toolTalk from '../../assets/projets/toolTalk.png';
 import stageTrack from '../../assets/projets/stageTrack.png';
+import LastFirst from '../../assets/projets/lastfirst.png';
 import type { ProjetInterface } from '../../utilities/ProjetInterface';
 import Title from '../Title';
 import ProjetCard from './ProjetCard';
@@ -11,10 +11,10 @@ const projects : ProjetInterface[] = [
     id: 1,
     title: "stageTrack : Application Web pour la gestion des rapports de stage",
     description:
-      "Application web pour simplifier et centraliser la gestion des rapports de stage des étudiants de l'ENSA de Fès. Son objectif est de faciliter le dépôt, la validation, le suivi et l'archivage des rapports de stage, tout en améliorant la communication entre les étudiants, les enseignants et l'administration.",
+      "Application web pour simplifier et centraliser la gestion des rapports de stage des étudiants de l'ENSA de Fès.",
     image: stageTrack,
     technologies: ["Spring Boot", "Angular", "Spring Security", "Bootstrap" , "MySQL"],
-    github: "https://github.com/votre-compte/task-manager",
+    github: "https://github.com/asmaeaouassar20/stageTrack",
   },
   {
     id: 2,
@@ -27,12 +27,12 @@ const projects : ProjetInterface[] = [
   },
   {
     id: 3,
-    title: "Portfolio Personnel",
+    title: "LastFirst",
     description:
-      "Portfolio moderne présentant mes compétences, expériences et projets.",
-    image: defaultImg,
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/votre-compte/portfolio",  
+      "Plateforme e-commerce full-stack conçue pour équiper les lauréats le jour de leur soutenance.",
+    image: LastFirst,
+    technologies: ["React", "Laravel", "Tailwind css"],
+    github: "https://github.com/asmaeaouassar20/LastFirst",
   },
 ];
 

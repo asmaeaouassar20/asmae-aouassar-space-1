@@ -33,37 +33,34 @@ const skills = [
 
 const experiences = [
     {
-        id: 1,
-        role: "Développeur Frontend",
-        company: "Tech Solutions",
-        period: "Jan 2024 - Présent",
+        id: 1,        
+        role: "Stagiaire Développeur Web FullStack",
+        company: "MTWINS - Fès",
+        period: "Fév 2026 - Mai 2026",        
         description: [
-            "Développement d'interfaces modernes avec React et Tailwind CSS.",
-            "Optimisation des performances et amélioration de l'expérience utilisateur.",
+            "Mise en place d'une plateforme numérique d'intermédiation pour la location automobile "
         ],
-        image: chufes,
+        image: mtwinsfes,
     },
     {
         id: 2,
-        role: "Développeur Full Stack",
-        company: "Digital Agency",
-        period: "Juin 2023 - Déc 2023",
+        role: "Stagiaire Développeur Web FullStack",
+        company: "ENHANCED TECHNOLOGIES - Rabat",
+        period: "juil. 2025 - août 2025",
         description: [
-            "Création d'APIs REST avec Node.js et Express.",
-            "Développement d'applications web avec React et MongoDB.",
+           "Conception et développement d'une plateforme collaborative pour l'e-gouvernement marocain."
         ],
         image: enhancedtechnologies,
     },
     {
         id: 3,
-        role: "Stagiaire Développeur Web",
-        company: "Startup Innov",
-        period: "Fév 2023 - Mai 2023",
+        role: "Stagiaire Analyse et Étude de Système d'Information",
+        company: "Centre Hospitalier Universitaire Hassan II - Fès",
+        period: "juil. 2024",
         description: [
-            "Participation au développement d'une plateforme de gestion.",
-            "Correction de bugs et ajout de nouvelles fonctionnalités.",
+            "Étude de satisfaction au Système d'Information Hospitalier  HOSIX chez les employés"
         ],
-        image: mtwinsfes,
+        image: chufes,
     },
 ];
 
@@ -72,7 +69,8 @@ const Experiences = () => {
         <div id="experiences">
             <Title title="Experiences" />
             <div className="flex flex-col-reverse md:flex-row justify-center items-center mt-12">
-                <div className="flex flex-wrap gap-4 justify-center items-center md:w-1/3 mt-4 md:mt-0">
+                {/* logos techno */}
+                <div className="flex flex-wrap gap-4 justify-center items-center  mt-4 md:mt-0">
                     {
                         skills.map((skill) => (
                             <div key={skill.id} className="flex justify-center items-center flex-col">
@@ -89,7 +87,7 @@ const Experiences = () => {
                     }
                 </div>
 
-
+                    {/* expériences de stage */}
                 <div className="md:ml-4 flex flex-col space-y-4">
                     {
                         experiences.map((exp) => (
@@ -101,15 +99,9 @@ const Experiences = () => {
                                         <span className="text-sm">{exp.period}</span>
                                     </div>
                                 </div>
-                                <ul className="list-disc ml-16 mt-2">
-                                    {
-                                        exp.description.map((desc, index) => (
-                                            <li key={index}>
-                                                {desc}
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
+                                <p className="mt-5">
+                                    {exp.description}
+                                </p>
                             </div>
                         ))
                     }
