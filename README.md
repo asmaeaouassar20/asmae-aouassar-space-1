@@ -13,5 +13,6 @@ Disponible à <a href="https://daisyui.com/docs/install/">daisyUI</a>
 
 #### Lucide React
 - C'est une bibliothèque d'icônes SVG pour React.
-- Elle permet d'ajouter facilement des icônes à ton interface (menu, recherche, utilisateur, paramètres, etc.) sous forme de composants React.  
+- Elle permet d'ajouter facilement des icônes à ton interface (menu, recherche, utilisateur, paramètres, etc.) sous forme de composants React.
+
 Disponible sur <a href="https://lucide.dev/guide/react/getting-started"> lucide.dev</a>
