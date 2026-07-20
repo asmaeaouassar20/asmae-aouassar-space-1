@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  base: '/asmae-aouassar-space-1/', //  Le nom EXACT de mon repo
 })
