@@ -1,4 +1,6 @@
-# <a href="https://asmae-aouassar.netlify.app/" >Click to view my portfolio</a>
+# <a href="https://asmae-aouassar.netlify.app/" >Click to view my portfolio - Netlify</a>
+# <a href="https://asmaeaouassar20.github.io/asmae-aouassar-space-1/" >Click to view my portfolio - GitHub Pages</a>
+
 #### vite
 Vite est un outil de développement JavaScript qui sert à créer et lancer rapidement des projets (comme avec React, Vue ou Svelte).  
 Il offre : 
