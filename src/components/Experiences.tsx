@@ -1,5 +1,5 @@
 import Title from "./Title";
-
+import {motion} from "motion/react";
 
 import imgHTML from '../assets/logos-techno/html.png';
 import imgCSS from '../assets/logos-techno/css.png';
@@ -74,11 +74,12 @@ const Experiences = () => {
                     {
                         skills.map((skill) => (
                             <div key={skill.id} className="flex justify-center items-center flex-col">
-                                <div className="w-24 h-24 p-2 rounded-full  border-2 border-accent">
-                                    <img
+                                <div className="w-24 h-24 p-2 rounded-full  border-2 border-accent flex items-center justify-center">
+                                    <motion.img
+                                    animate={{ rotate:360}} transition={{duration:4, repeat:Infinity , ease: "linear"}}
                                         src={skill.image}
                                         alt={`logo de la techno ${skill.name}`}
-                                        className="object-cover rounded-full h-full w-full"
+                                        className="object-contain rounded-full h-[90%] w-[90%]"
                                     />
                                 </div>
                                 <span className="mt-2 text-sm">{skill.name}</span>
@@ -93,7 +94,7 @@ const Experiences = () => {
                         experiences.map((exp) => (
                             <div key={exp.id} className="flex flex-col bg-base-200 p-5 rounded-xl shadow-lg">
                                 <div className="flex items-center">
-                                    <img src={exp.image} alt={`logo de la socitété ${exp.company}`} className="object-cover h-10 w-10" />
+                                    <img   src={exp.image} alt={`logo de la socitété ${exp.company}`} className="object-cover h-10 w-10" />
                                     <div className="ml-4">
                                         <h1 className="text-xl text-accent font-bold">{exp.role} , {exp.company}</h1>
                                         <span className="text-sm">{exp.period}</span>

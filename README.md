@@ -20,6 +20,15 @@ Disponible à <a href="https://daisyui.com/docs/install/">daisyUI</a>
 
 Disponible sur <a href="https://lucide.dev/guide/react/getting-started"> lucide.dev</a>
 
+####  Motion
+La bibliothèque Motion (anciennement Framer Motion) est une bibliothèque JavaScript qui permet de créer des animations fluides et interactives dans les applications web, notamment avec React, mais aussi en JavaScript et Vue. Elle est conçue pour rendre les animations simples à écrire tout en restant très performantes.  
+
+```
+npm install motion
+```
+Disponible à <a href="https://motion.dev/docs/react"> motion.dev</a>
+
+
 # Déploiement sur GitHub pages 
 
 1.
@@ -29,7 +38,11 @@ Disponible sur <a href="https://lucide.dev/guide/react/getting-started"> lucide.
 
 ```
 "homepage" : "https://github.com/asmaeaouassar20/asmae-aouassar-space-1",
+```
+
 et
+
+```
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
@@ -38,3 +51,5 @@ et
 
 3.
  ``` npm run deploy ```
+
+

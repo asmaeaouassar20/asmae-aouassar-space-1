@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://github.com/asmaeaouassar20/asmae-aouassar-space-1",
+  "homepage": "https://github.com/asmaeaouassar20/asmae-aouassar-space-1",
   "name": "asmae",
   "private": true,
   "version": "0.0.0",
@@ -7,13 +7,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",    
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
     "lucide-react": "^1.25.0",
+    "motion": "^12.42.2",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-icons": "^5.7.0",

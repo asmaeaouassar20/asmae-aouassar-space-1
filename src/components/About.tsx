@@ -30,7 +30,7 @@ const About = ()=>{
     return (
         <div className="bg-base-200 p-8 mb-10 md:mb-32 " id="about">
             <Title title="à propos" />
-            <div className="md:h-screen flex justify-center items-center mt-8">
+            <div className="md:h-screen flex justify-center items-center">
                 <div className="hidden md:block  h-[70%] "> <img 
                     src={imgPerso}
                     alt="Ma photo personnelle" 
@@ -38,7 +38,7 @@ const About = ()=>{
                     />
                 </div>
 
-                <div className="md:ml-4 space-y-4">
+                <div className="md:ml-4 space-y-4 mt-5">
                     {
                         aboutSections.map(
                             (section) => <div key={section.id} className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl">
