@@ -27,10 +27,10 @@ const ProjetCard = ({ projet }: ProjetCardProps) => {
                     }
                 </div>
 
-                <a href="#" className="absolute bottom-0 left-3 right-3  mt-8 mb-2 py-1.5 bg-base-300 hover:bg-base-200 rounded-lg hover:cursor-pointer flex gap-4 items-center justify-center">
+                <span className="absolute bottom-0 left-3 right-3  mt-8 mb-2 py-1.5 bg-base-300 hover:bg-base-200 rounded-lg hover:cursor-pointer flex gap-4 items-center justify-center">
                     <a href={projet.github} className="hover:underline">Lien GitHub</a>
                     <FaGithub className="inline  text-xl " />
-                </a>
+                </span>
 
 
             </div>
