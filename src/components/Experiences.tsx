@@ -10,6 +10,8 @@ import imgTAILWIND from '../assets/logos-techno/tailwindcss.png';
 import imgTYPE from '../assets/logos-techno/ts.png';
 import imgJAVA from '../assets/logos-techno/java.png';
 import imgANGULAR from '../assets/logos-techno/angular.png';
+import imgLARAVEL from '../assets/logos-techno/laravel.png';
+import imgSPRINGBOOT from '../assets/logos-techno/spring-boot.png';
 
 
 import chufes from '../assets/lieu-stage/chufes.png';
@@ -24,11 +26,13 @@ const skills = [
     { id: 2, name: "CSS", image: imgCSS },
     { id: 3, name: "JavaScript", image: imgJS },
     { id: 4, name: "React", image: imgREACT },
-    { id: 5, name: "Node.js", image: imgPHP },
+    { id: 5, name: "PHP", image: imgPHP },
     { id: 6, name: "Tailwind CSS", image: imgTAILWIND },
     { id: 7, name: "TypeScript", image: imgTYPE },
-    { id: 8, name: "Next.js", image: imgJAVA },
-    { id: 9, name: "Prisma", image: imgANGULAR },
+    { id: 8, name: "Java", image: imgJAVA },
+    { id: 9, name: "Angular", image: imgANGULAR },
+    { id: 10, name: "Laravel", image: imgLARAVEL },
+    { id: 11, name: "Spring Boot", image: imgSPRINGBOOT },
 ];
 
 const experiences = [
@@ -79,7 +83,7 @@ const Experiences = () => {
                                     animate={{ rotate:360}} transition={{duration:4, repeat:Infinity , ease: "linear"}}
                                         src={skill.image}
                                         alt={`logo de la techno ${skill.name}`}
-                                        className="object-contain rounded-full h-[90%] w-[90%]"
+                                        className="object-contain rounded-full h-[60%] w-[60%]"
                                     />
                                 </div>
                                 <span className="mt-2 text-sm">{skill.name}</span>
